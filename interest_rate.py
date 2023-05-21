@@ -5,8 +5,10 @@ n = 5 #(number of years)
 
 #fv = pv*pow((1+r),n)
 
-def inretest_rate(pv,r,n):
-    fv = pv*pow((1+r)),n)
+
+def inretest_rate(pv,r,n,k):
+    
+    fv = pv*pow((1+r/k),n)
     return fv
 
-inretest_rate(1000,0.05,2)
+inretest_rate(1000,0.05,2,2)
